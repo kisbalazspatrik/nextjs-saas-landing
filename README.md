@@ -12,7 +12,7 @@ To get started, clone this repository and run `npm install` to install all the n
 
 ```bash
 git clone https://github.com/kisbalazspatrik/nextjs-saas-landing.git
-cd nextjs-nft-collection-landing
+cd nextjs-saas-landing
 npm install
 ```
 
