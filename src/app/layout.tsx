@@ -5,6 +5,9 @@ import favicon from "#/public/favicon.png";
 import SummaryLargeImage from "#/public/summary_large_image.png";
 
 import "./globals.scss";
+import Cookie from "../components/Cookie";
+import Banner from "../components/Banner";
+import Navbar from "../components/Navbar";
 
 interface LayoutProps {
   children: ReactNode;
@@ -68,7 +71,12 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Cookie />
+          <Banner />
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );
