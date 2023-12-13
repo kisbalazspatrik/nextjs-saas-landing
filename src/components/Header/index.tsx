@@ -45,6 +45,7 @@ const Header = () => {
       align={"center"}
       justify={"center"}
       direction={"column"}
+      px={2}
     >
       <Flex bg={"#ffffff50"} px={4} rounded={"full"} mb={5}>
         <Text color={StargateColors.white} fontSize={"xs"}>
@@ -59,24 +60,24 @@ const Header = () => {
         }}
         color={StargateColors.white}
         lineHeight={1}
+        textAlign={"center"}
       >
         Your Ultimate
       </Heading>
       <AnimatePresence mode="wait">
         <Heading
+          as={motion.h1}
           fontSize={{
             base: 48,
             md: 64,
             lg: 84,
           }}
-          as={motion.h1}
           key={currentWord}
           color={StargateColors.white}
           lineHeight={1}
-          initial={{ opacity: 0, filter: "blur(4px)" }}
+          initial={{ opacity: 0.2, filter: "blur(4px)" }}
           animate={{ opacity: 1, filter: "blur(0px)" }}
-          exit={{ opacity: 0, filter: "blur(4px)" }}
-          transition={"1s ease-out"}
+          exit={{ opacity: 0.2, filter: "blur(4px)" }}
         >
           {currentWord}
         </Heading>
