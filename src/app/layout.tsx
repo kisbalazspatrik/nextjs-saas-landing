@@ -1,13 +1,13 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import { Providers } from "#/src/components/Providers";
-import favicon from "#/public/favicon.png";
-import SummaryLargeImage from "#/public/summary_large_image.png";
-
-import "./globals.scss";
+import favicon from "#/public/images/favicon.png";
+import SummaryLargeImage from "#/public/images/summary_large_image.png";
 import Cookie from "../components/Cookie";
 import Banner from "../components/Banner";
 import Navbar from "../components/Navbar";
+
+import "./globals.scss";
 
 interface LayoutProps {
   children: ReactNode;
