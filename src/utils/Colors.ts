@@ -6,4 +6,5 @@ export const StargateColors = {
   darkBg: "#262626",
   white: "#FFFFFF",
   lightBg: "#d9d9d9",
+  lightGrey: "#f2f2f2",
 };
