@@ -22,8 +22,12 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.text-light-shadow {
+  text-shadow: 0px 0px 25px rgba(255, 255, 255, 0.75),
+    0px 0px 50px rgba(255, 255, 255, 0.75);
+}
+
+.text-dark-shadow {
+  text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.75),
+    0px 0px 50px rgba(0, 0, 0, 0.75);
 }
