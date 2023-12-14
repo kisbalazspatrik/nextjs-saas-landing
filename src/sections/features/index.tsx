@@ -21,7 +21,7 @@ const Features = () => {
       align={"center"}
       my={24}
       px={2}
-      maxW={1440}
+      maxW={1200}
       mx={"auto"}
     >
       <Heading

@@ -5,7 +5,7 @@ import React from "react";
 const Functions = () => {
   const GridItemStyles = {
     color: "white",
-    rounded: "md",
+    rounded: 32,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -16,9 +16,8 @@ const Functions = () => {
       md: "300px",
     },
     transition: "all 0.25s ease",
-    bgColor: StargateColors.lightGrey,
     _hover: {
-      shadow: "lg",
+      shadow: "md",
     },
   };
 
@@ -30,7 +29,7 @@ const Functions = () => {
       align={"center"}
       my={24}
       px={2}
-      maxW={1440}
+      maxW={1200}
       mx={"auto"}
     >
       <Grid
@@ -46,36 +45,21 @@ const Functions = () => {
           colSpan={2}
           rowSpan={1}
           {...GridItemStyles}
-          bgImage={"url(https://i.imgur.com/hTLlF1v.png)"}
+          bgImage={"url(https://i.imgur.com/M7zriZy.png)"}
+          bgColor={StargateColors.lightGrey}
           bgSize={"contain"}
           bgRepeat={"no-repeat"}
           bgPosition={"center"}
-        >
-          <Heading
-            textAlign={"center"}
-            color={StargateColors.black}
-            className="text-light-shadow"
-          >
-            Copywriter
-          </Heading>
-        </GridItem>
+        ></GridItem>
         <GridItem
           colSpan={1}
           rowSpan={1}
           {...GridItemStyles}
-          bgImage={"url(https://i.imgur.com/t7eqsea.png)"}
+          bgImage={"url(https://i.imgur.com/MQEVBRb.png)"}
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
           bgPosition={"center"}
-        >
-          <Heading
-            textAlign={"center"}
-            color={StargateColors.white}
-            className="text-dark-shadow"
-          >
-            Image Generator
-          </Heading>
-        </GridItem>
+        ></GridItem>
         <GridItem
           colSpan={1}
           rowSpan={{
@@ -83,19 +67,12 @@ const Functions = () => {
             md: 2,
           }}
           {...GridItemStyles}
-          bgImage={"url(https://i.imgur.com/dUwq8kP.png)"}
+          bgImage={"url(https://i.imgur.com/9Zphp8f.png)"}
           bgSize={"contain"}
           bgRepeat={"no-repeat"}
           bgPosition={"bottom"}
-        >
-          <Heading
-            textAlign={"center"}
-            color={StargateColors.black}
-            className="text-light-shadow"
-          >
-            Developer
-          </Heading>
-        </GridItem>
+          bgColor={"#282c34"}
+        ></GridItem>
         <GridItem
           colSpan={1}
           rowSpan={1}
@@ -103,16 +80,18 @@ const Functions = () => {
           bgImage={"url(https://i.imgur.com/dhalAZP.png)"}
           bgSize={"contain"}
           bgRepeat={"no-repeat"}
-          bgPosition={"bottom"}
+          bgPosition={"center"}
+          bgColor={"#70115C"}
         ></GridItem>
         <GridItem
           colSpan={1}
           rowSpan={1}
           {...GridItemStyles}
-          bgImage={"url(https://i.imgur.com/2WRDbs8.png)"}
+          bgImage={"url(https://i.imgur.com/gwFRoJ8.png)"}
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
           bgPosition={"center"}
+          bgColor={"#262626"}
         ></GridItem>
         <GridItem
           colSpan={2}
@@ -122,6 +101,7 @@ const Functions = () => {
           bgSize={"contain"}
           bgRepeat={"no-repeat"}
           bgPosition={"center"}
+          bgColor={StargateColors.lightGrey}
         ></GridItem>
       </Grid>
     </Flex>
