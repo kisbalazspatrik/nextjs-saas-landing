@@ -20,7 +20,6 @@ const NavItems = [
   { name: "Features", href: "/#features" },
   { name: "Product", href: "/#product" },
   { name: "Pricing", href: "/#pricing" },
-  { name: "Contact", href: "/#contact" },
 ];
 
 const Navbar: FC = () => {

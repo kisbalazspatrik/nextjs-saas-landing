@@ -21,7 +21,7 @@ const Product = () => {
       justify={"center"}
       align={"center"}
       my={24}
-      pt={12}
+      pt={6}
       pb={{
         base: 6,
         md: 12,

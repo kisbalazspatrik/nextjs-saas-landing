@@ -115,12 +115,12 @@ const Header = () => {
 
 const bgAnimation = keyframes`
   0% {
-        background-position: 0% 100%
-    }
+    background-position: 0% 100%
+  }
 
-    to {
-        background-position: 100% 100%
-    }
+  to {
+    background-position: 100% 100%
+  }
 `;
 
 export default Header;
