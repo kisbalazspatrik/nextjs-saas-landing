@@ -17,12 +17,11 @@ const Audience = () => {
         fontSize={{
           base: 32,
           md: 48,
-          lg: 64,
         }}
         textAlign={"center"}
         mb={10}
       >
-        We recommend this tool for
+        We recommend Stargate for
       </Heading>
       <Grid
         templateColumns={{
@@ -65,7 +64,7 @@ const Card = ({ color, children }: CardProps) => {
   return (
     <Flex
       align={"center"}
-      bg={`${color}10`}
+      bg={`${color}25`}
       px={8}
       py={5}
       rounded={"lg"}
@@ -105,23 +104,23 @@ const Cards = [
   },
   {
     title: "Designers",
-    color: "#A400D6",
+    color: "#A431C7",
   },
   {
     title: "Entrepreneurs",
-    color: "#00CAA9",
+    color: "#42C9B2",
   },
   {
     title: "Developers",
-    color: "#0A7EDD",
+    color: "#348FDA",
   },
   {
     title: "Students",
-    color: "#00BD3F",
+    color: "#41B668",
   },
   {
     title: "Startups",
-    color: "#E00069",
+    color: "#DA4D8F",
   },
 ];
 

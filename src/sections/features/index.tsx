@@ -28,7 +28,6 @@ const Features = () => {
         fontSize={{
           base: 32,
           md: 48,
-          lg: 64,
         }}
         textAlign={"center"}
       >
