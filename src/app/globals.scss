@@ -82,3 +82,22 @@ a {
     );
   }
 }
+
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #e340bf #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e340bf;
+}
