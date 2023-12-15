@@ -32,30 +32,27 @@ const Navbar: FC = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > (showBanner ? 45 : 0));
 
-      // Adjust these IDs to match the actual IDs of your sections
       const sectionIDs = NavItems.map((item) => item.name.toLowerCase());
 
       const currentSection = sectionIDs.find((sectionID) => {
         const sectionElement = document.getElementById(sectionID);
         if (sectionElement) {
           const { top, bottom } = sectionElement.getBoundingClientRect();
-          const isSectionInView =
-            top < window.innerHeight * 0.25 &&
-            bottom > window.innerHeight * 0.75;
+          const isSectionInView = top >= 0 && bottom <= window.innerHeight;
           return isSectionInView;
         }
         return false;
       });
 
       if (currentSection) {
-        setActiveSection(`${currentSection}`);
+        setActiveSection(currentSection);
       } else {
         setActiveSection("");
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initialize on component mount
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
