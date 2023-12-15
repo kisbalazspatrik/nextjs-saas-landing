@@ -8,6 +8,8 @@ import Development from "./categories/development";
 import Marketing from "./categories/marketing";
 import Video from "./categories/video";
 import SocialMedia from "./categories/socialMedia";
+import { AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Product = () => {
   const [currentCategory, setCurrentCategory] = useState("copywriting");
@@ -72,8 +74,7 @@ const Product = () => {
             transition={"all 0.25s ease"}
             {...(currentCategory === category.toLowerCase()
               ? {
-                  bgColor: StargateColors.white,
-                  color: StargateColors.black,
+                  bgColor: StargateColors.black,
                   shadow: "lg",
                 }
               : {})}
@@ -84,7 +85,7 @@ const Product = () => {
               whiteSpace={"nowrap"}
               color={
                 currentCategory === category.toLowerCase()
-                  ? StargateColors.black
+                  ? StargateColors.white
                   : StargateColors.grey
               }
             >
@@ -93,14 +94,34 @@ const Product = () => {
           </Flex>
         ))}
       </Flex>
-      {currentCategory === "copywriting" && <Copywriting />}
-      {currentCategory === "design" && <Design />}
-      {currentCategory === "development" && <Development />}
-      {currentCategory === "marketing" && <Marketing />}
-      {currentCategory === "video" && <Video />}
-      {currentCategory === "social media" && <SocialMedia />}
+      <AnimatePresence mode="wait">
+        {Object.entries(categoryComponents).map(
+          ([key, Component]) =>
+            currentCategory === key && (
+              <motion.div
+                key={key}
+                initial={{ opacity: 0.2 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0.2 }}
+                transition={{ duration: 0.25 }}
+                layout
+              >
+                <Component />
+              </motion.div>
+            )
+        )}
+      </AnimatePresence>
     </Flex>
   );
+};
+
+const categoryComponents = {
+  copywriting: Copywriting,
+  design: Design,
+  development: Development,
+  marketing: Marketing,
+  video: Video,
+  "social media": SocialMedia,
 };
 
 const Categories = [
