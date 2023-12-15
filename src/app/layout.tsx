@@ -8,6 +8,7 @@ import Banner from "../components/Banner";
 import Navbar from "../components/Navbar";
 
 import "./globals.scss";
+import Footer from "../components/Footer";
 
 interface LayoutProps {
   children: ReactNode;
@@ -76,6 +77,7 @@ export default function RootLayout({ children }: LayoutProps) {
           <Banner />
           <Navbar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>
