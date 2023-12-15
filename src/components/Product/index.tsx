@@ -19,10 +19,14 @@ const Product = () => {
       justify={"center"}
       align={"center"}
       my={24}
-      py={12}
+      pt={12}
+      pb={{
+        base: 6,
+        md: 12,
+      }}
       px={{
         base: 0,
-        md: 2,
+        md: 10,
       }}
       maxW={1200}
       mx={{
@@ -32,7 +36,7 @@ const Product = () => {
       border={`1px solid ${StargateColors.lightBg}`}
       borderRadius={24}
     >
-      <Heading textAlign={"center"}>
+      <Heading textAlign={"center"} px={2}>
         ... But what can Stargate do for You?
       </Heading>
       <Flex
