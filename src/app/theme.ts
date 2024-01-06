@@ -10,4 +10,8 @@ export const customTheme = extendTheme({
     heading: inter.style.fontFamily,
     body: inter.style.fontFamily,
   },
+  config: {
+    initialColorMode: "light",
+    useSystemColorMode: false,
+  },
 });
