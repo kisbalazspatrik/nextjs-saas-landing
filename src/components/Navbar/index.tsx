@@ -79,7 +79,7 @@ const Navbar: FC = () => {
           maxW={1440}
           w="100%"
           py={5}
-          px={{ base: 10, xl: 0 }}
+          px={{ base: 10, xl: 5 }}
           align="center"
           justify="space-between"
         >
@@ -128,7 +128,7 @@ const Navbar: FC = () => {
             <Button
               as={motion.a}
               whileHover={{ scale: 1.1 }}
-              href="#"
+              href="#footer"
               rounded="full"
               background={isScrolled ? StargateColors.primary : "white"}
               color={isScrolled ? "white" : "black"}

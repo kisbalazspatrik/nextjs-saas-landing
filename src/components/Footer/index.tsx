@@ -15,6 +15,7 @@ const Footer = () => {
       justify={"center"}
       align={"center"}
       direction={"column"}
+      id="footer"
     >
       <FooterTopSVG />
       <FooterBg />
@@ -49,13 +50,14 @@ const Footer = () => {
             WebkitBackgroundClip: "text",
           }}
         >
-          Try it out for free!
+          Fork me on GitHub
         </Heading>
 
         <Button
           rightIcon={<LuArrowRight />}
           as={motion.a}
-          href={"#"}
+          href={"https://github.com/kisbalazspatrik/nextjs-saas-landing"}
+          target="_b"
           whileHover={{ scale: 1.1 }}
           size={"lg"}
           mt={5}
