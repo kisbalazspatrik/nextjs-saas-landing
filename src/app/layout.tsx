@@ -37,7 +37,7 @@ export const metadata: Metadata = {
       "Stargate is a modern SaaS Landing Page template built with NextJS. It's designed to provide a seamless and engaging experience for showcasing software products, especially those in the tech and startup niches.",
     url: "https://stargate.nfteam.eu/",
     type: "website",
-    locale: "hu_HU",
+    locale: "en_US",
     images: [
       {
         url: SummaryLargeImage.src,
